@@ -7,7 +7,7 @@ public class Block : MonoBehaviour
     public Vector2 offset;
     public GameObject boxPrefabs;
     public float x;
-    private void Start()
+    private void Awake()
     {
         for (int i = 0; i < size.x; i++)
         {

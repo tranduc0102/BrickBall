@@ -11,7 +11,7 @@ public class AI : MonoBehaviour
     public Rigidbody2D rb;
     public Ball A;
     private float speed = 10f;
-    private float delayTime = 0.7f; // Thời gian delay (2 giây)
+    private float delayTime = 0.5f; // Thời gian delay (2 giây)
     private bool isDelayed = false;
 
     private void Start()
@@ -42,7 +42,7 @@ public class AI : MonoBehaviour
                 Debug.Log("Delay finished!");
                 // Reset biến và thời gian delay
                 isDelayed = false;
-                delayTime = 0.7f; // Đặt lại thời gian delay
+                delayTime = 0.5f; // Đặt lại thời gian delay
             }
         }
         else
